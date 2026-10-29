@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countryside Holiday</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- top part of the page with title and menu -->
+    <header>
+        <h1>My Countryside Holiday</h1>
+
+        <!-- burger button (top right) -->
+        <button id="burger-btn" class="burger">☰</button>
+
+        <!-- the menu that opens when you click the burger -->
+        <nav id="main-nav" class="nav-menu">
+            <ul>
+                <li><a href="#about">About the Trip</a></li>
+                <li><a href="#places">Places I Visited</a></li>
+                <li><a href="#tips">Travel Tips</a></li>
+                <li><a href="#about">Cottage Stay</a></li>
+                <li><a href="#places">Best Views</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- section that talks about the trip -->
+        <section id="about">
+            <h2>About the Trip</h2>
+            <p>Last summer I went on a holiday in the countryside. It was quiet and peaceful. I stayed in a small cottage and spent most days walking around the fields and hills.</p>
+            <img src="images/sunset.jpg" alt="Sunset over the countryside">
+            
+        </section>
+
+        <!-- section that shows some photos from the trip -->
+        <section id="places">
+            <h2>Places I Visited</h2>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="images/forest.jpg" alt="Path through a green forest">
+                    <p>Forest walk</p>
+                </div>
+                <div class="photo-card">
+                    <img src="images/hills.jpg" alt="Misty hills in the countryside">
+                    <p>Morning hills</p>
+                </div>
+                <div class="photo-card">
+                    <img src="images/mountains.jpg" alt="Mountain view over green valleys">
+                    <p>Mountain view</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- section with a button that shows or hides tips -->
+        <section id="tips">
+            <h2>Travel Tips</h2>
+            <button id="show-tips">Show Tips</button>
+            <div id="tips-list" class="hidden">
+                <ul>
+                    <li>Pack comfortable walking shoes</li>
+                    <li>Bring a light rain jacket</li>
+                    <li>Take lots of photos</li>
+                    <li>Try local food if you can</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- bottom part of the page -->
+    <footer>
+        <p>WebDev Refresher</p>
+    </footer>
+
+    <script src="jscript.js"></script>
+</body>
+</html>
